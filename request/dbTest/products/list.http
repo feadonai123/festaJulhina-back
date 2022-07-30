@@ -1,0 +1,1 @@
+GET http://localhost:1234/dbTest/products?all=false HTTP/1.1

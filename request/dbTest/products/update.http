@@ -1,0 +1,7 @@
+PATCH http://localhost:1234/dbTest/products/62e57bbb3ff72149dbd3a1e7 HTTP/1.1
+Accept: application/json
+Content-Type: application/json
+
+{
+  "value": 1.5
+}

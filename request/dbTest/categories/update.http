@@ -1,0 +1,7 @@
+PATCH http://localhost:1234/dbTest/categories/62daf4d642d6e1e03811c82f HTTP/1.1
+Accept: application/json
+Content-Type: application/json
+
+{
+  "campo1": "batata atualizada"
+}

@@ -1,0 +1,8 @@
+POST http://localhost:1234/dbTest/categories HTTP/1.1
+Accept: application/json
+Content-Type: application/json
+
+{
+  "campo1": 2,
+  "campo2": "batata"
+}
