@@ -1,0 +1,9 @@
+POST http://localhost:1234/dbTest/roles HTTP/1.1
+Accept: application/json
+Content-Type: application/json
+Authorization: baerel eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MmU2OGRkNmU2N2NlNWUyMDFkOWFlODQiLCJpYXQiOjE2NTkyODA4OTksImV4cCI6MTY1OTI4Mzg5OX0.MonDcFJKc2YFZKygG3gYHlXx29qmY9zkQdB-wdiwGJY
+
+{
+  "name": "teste2",
+  "permissions" : ["62e6a0a32b0e7278512a933f", "62e6a09f2b0e7278512a933b"]
+}

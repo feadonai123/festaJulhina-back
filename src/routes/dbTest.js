@@ -9,5 +9,15 @@ module.exports = [
   require('../dbTest/categories/update'),
   require('../dbTest/categories/delete'),
   require('../dbTest/categories/get'),
-  require('../dbTest/categories/list')
+  require('../dbTest/categories/list'),
+
+  require("../dbTest/users/create"),
+  require("../dbTest/users/list"),
+
+  require("../dbTest/roles/create"),
+  require("../dbTest/roles/list"),
+
+  require("../dbTest/adminPages/create"),
+  require("../dbTest/adminPages/list")
+  
 ]

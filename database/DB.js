@@ -22,7 +22,7 @@ module.exports = class DB {
     try{
       if(!this.db) await this.connect()
       const finded = await this.db.findOne(filter)
-      result = finded.toObject()
+      result = finded ? finded.toObject() : null
       success = true
     }catch(e){
       message = e.message
@@ -35,7 +35,7 @@ module.exports = class DB {
     try{
       if(!this.db) await this.connect()
       const created = await this.db.create(data)
-      result = created.toObject()
+      result = created ? created.toObject() : null
       success = true
     }catch(e){
       message = e.message
@@ -48,7 +48,7 @@ module.exports = class DB {
     try{
       if(!this.db) await this.connect()
       const updated = await this.db.findOneAndUpdate(filter, data, { new: true })
-      result = updated.toObject()
+      result = updated ? updated.toObject() : null
       success = true
     }catch(e){
       message = e.message
@@ -65,7 +65,7 @@ module.exports = class DB {
       if(!all) where.deleted_at = null
 
       const finded = await this.db.find(where)
-      result = finded.map(item=>item.toObject())
+      result = finded ? finded.map(item=>item.toObject()) : null
       success = true
     }catch(e){
       message = e.message

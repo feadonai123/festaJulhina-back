@@ -1,0 +1,9 @@
+POST http://localhost:1234/dbTest/users HTTP/1.1
+Accept: application/json
+Content-Type: application/json
+Authorization: baerel eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MmU2OGRkNmU2N2NlNWUyMDFkOWFlODQiLCJpYXQiOjE2NTkyODA4OTksImV4cCI6MTY1OTI4Mzg5OX0.MonDcFJKc2YFZKygG3gYHlXx29qmY9zkQdB-wdiwGJY
+
+{
+  "username": "user3",
+  "roles": ["62e6a15b86dd9ed90f5c5404"]
+}

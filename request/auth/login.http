@@ -3,6 +3,6 @@ Accept: application/json
 Content-Type: application/json
 
 {
-  "username": "felipe",
-  "password": "123"
+  "username": "user3",
+  "password": "b9b983e17"
 }
