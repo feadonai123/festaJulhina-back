@@ -42,6 +42,6 @@ module.exports = require('express').Router().post(`/login`, async (req, res) => 
   return res.status(status).json({
     success: status == 200,
     message,
-    result
+    data: result
   })
 })

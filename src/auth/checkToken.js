@@ -31,6 +31,6 @@ module.exports = require('express').Router().get(`/checkToken/:token`, async (re
   return res.status(status).json({
     success: status == 200,
     message,
-    result
+    data: result
   })
 })
