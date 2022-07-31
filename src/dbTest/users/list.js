@@ -5,7 +5,7 @@ module.exports = require('express').Router().get(`/users`, async (req, res) => {
   try{
     const 
       all = req.query.all ? req.query.all == "true" : false,
-      resultFindAll = await Users.findAll(all),
+      resultFindAll = await Users.findAll({ all }),
       resultFindAllFormat = resultFindAll?.data && resultFindAll.data.map(user => {
         const userTemp = { ...user }
         delete userTemp.password

@@ -5,7 +5,7 @@ module.exports = require('express').Router().get(`/products`, async (req, res) =
   try{
     const 
       all = req.query.all ? req.query.all == "true" : false,
-      resultFindAll = await Products.findAll(all)
+      resultFindAll = await Products.findAll({ all })
     
     if(!resultFindAll.success) throw ({
       message: resultFindAll.message,

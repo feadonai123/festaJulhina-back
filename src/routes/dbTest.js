@@ -13,9 +13,11 @@ module.exports = [
 
   require("../dbTest/users/create"),
   require("../dbTest/users/list"),
+  require("../dbTest/users/get"),
 
   require("../dbTest/roles/create"),
   require("../dbTest/roles/list"),
+  require("../dbTest/roles/get"),
 
   require("../dbTest/adminPages/create"),
   require("../dbTest/adminPages/list")

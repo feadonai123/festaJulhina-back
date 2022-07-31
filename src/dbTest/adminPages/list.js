@@ -5,7 +5,7 @@ module.exports = require('express').Router().get(`/adminPages`, async (req, res)
   try{
     const 
       all = req.query.all ? req.query.all == "true" : false,
-      resultFindAll = await AdminPages.findAll(all)
+      resultFindAll = await AdminPages.findAll({ all })
     
     if(!resultFindAll.success) throw ({
       message: resultFindAll.message,

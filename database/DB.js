@@ -56,12 +56,12 @@ module.exports = class DB {
     return ({ success, data: result, message })
   }
 
-  async findAll(all = false) {
+  async findAll({ filter = {}, all = false }) {
     let success = false, result = undefined, message = undefined
     try{
       if(!this.db) await this.connect()
 
-      let where = {}
+      let where = filter
       if(!all) where.deleted_at = null
 
       const finded = await this.db.find(where)

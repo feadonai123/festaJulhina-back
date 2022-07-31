@@ -15,7 +15,7 @@ module.exports = require('express').Router().post(`/login`, async (req, res) => 
       status: 400
     })
 
-    const user = await Users.findOne({ username, password: passwordMD5 })
+    const user = await Users.getFullUser({ username, password: passwordMD5 })
     if(!user.success) throw ({
       message: `Falha ao consultar usuário no banco: ${user.message}`,
       status: 500

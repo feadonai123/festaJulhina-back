@@ -5,7 +5,7 @@ module.exports = require('express').Router().get(`/categories`, async (req, res)
   try{
     const 
       all = req.query.all ? req.query.all == "true" : false,
-      resultFindAll = await Categories.findAll(all)
+      resultFindAll = await Categories.findAll({ all })
     
     if(!resultFindAll.success) throw ({
       message: resultFindAll.message,
